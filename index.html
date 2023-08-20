@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Sale</title>
+    <!-- tailwind and daisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font - work sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-color': '#E527B2',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-work-sans {
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <header>
 
+<body class="font-work-sans">
+    <!-- banner section -->
+    <header class="contianer mx-auto bg-[#F9F6E2]">
+        <div class="flex flex-col md:flex-row gap-10 justify-center items-center px-6 md:px-12 lg:px-14 py-8">
+            <div class="flex-1 text-center">
+                <h4 class="text-3xl font-medium">---SALE FEVER---</h4>
+                <h1 class="text-4xl lg:text-6xl font-bold mt-8 lg:mt-12 mb-10 lg:mb-14">Purchase TK 200 or above & get
+                    <span class="text-primary-color">20% off</span>
+                </h1>
+                <p>
+                    <span class="text-2xl font-medium">Use Promo Code</span>
+                    <button class="btn bg-primary-color hover:bg-fuchsia-700 text-white text-2xl font-semibold">SELL200</button>
+                </p>
+            </div>
+            <div class="flex-1">
+                <img class="w-3/4 mx-auto" src="./images/Summer 1.png" alt="">
+            </div>
+        </div>
     </header>
     <main>
 
     </main>
     <script src="./js/script.js"></script>
 </body>
+
 </html>
