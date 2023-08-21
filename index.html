@@ -213,10 +213,10 @@
             <div class="mt-16">
                 <div class="bg-white rounded-lg p-6">
                     <h4 class="text-2xl font-medium mb-4">Have coupon?</h4>
-                    <input id="coupon-code" class="text-xl w-[220px] text-[#11111166] p-4 border rounded-l-lg"
+                    <input id="coupon-code" class="text-xl w-4/6 text-[#11111166] p-2 md:p-4 border rounded-l-lg"
                         type="text" placeholder="Coupon code">
                     <button onclick="couponApply()" id="apply-btn"
-                        class="disabled:bg-gray-500 bg-primary-color hover:bg-fuchsia-700 px-6 py-4 rounded-r-lg text-white text-xl font-semibold -ml-2"
+                        class="disabled:bg-gray-500 bg-primary-color hover:bg-fuchsia-700 px-2 md:px-6 py-2 md:py-4 rounded-r-lg text-white text-lg md:text-xl font-semibold -ml-2"
                         disabled>Apply</button>
                 </div>
                 <div class="bg-white rounded-lg p-6 mt-4">
@@ -242,10 +242,10 @@
 
         <!-- Modal -->
         <dialog id="modal" class="modal">
-            <div class="bg-white p-8 md:p-24 rounded-xl">
+            <div class="bg-white p-6 md:p-24 rounded-xl">
                 <img class="mx-auto" src="./images/congo.png" alt="">
                 <div class="text-center">
-                    <h3 class="font-bold text-5xl">Congratulations</h3>
+                    <h3 class="font-bold text-3xl md:text-5xl">Congratulations</h3>
                     <p class="py-4 text-xl text-[#11111180]">Your Purchase the product</p>
                     <button onclick="goHome()"
                         class="bg-primary-color hover:bg-fuchsia-700 px-6 py-4 rounded-lg text-white text-xl font-semibold">Go
